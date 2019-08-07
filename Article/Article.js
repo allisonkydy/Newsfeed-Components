@@ -152,6 +152,7 @@ function articleMother(dataObj) {
   firstParagraph.textContent = dataObj.firstParagraph;
   secondParagraph.textContent = dataObj.secondParagraph;
   thirdParagraph.textContent = dataObj.thirdParagraph;
+  expandButton.textContent = "Click to read";
 
   // events
   expandButton.addEventListener('click', () => {
