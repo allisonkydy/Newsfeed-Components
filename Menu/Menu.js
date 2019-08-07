@@ -38,6 +38,9 @@ function menuMother(menuArray) {
   // create new elements
   const menu = document.createElement('div');
   const menuList = document.createElement('ul');
+
+  // structure elements
+  menu.appendChild(menuList);
   
   // create li for each item in array and add to ul
   menuArray.forEach(item => {
@@ -56,9 +59,15 @@ function menuMother(menuArray) {
   const menuButton = document.querySelector('.menu-button');
 
   // menu button click event
-  menuButton.addEventListener('click', e => {
+  menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open');
   });
 
   return menu;
 }
+
+// create new menu
+const newMenu = menuMother(menuItems);
+
+// add new menu to DOM
+document.querySelector('.header').appendChild(newMenu);
