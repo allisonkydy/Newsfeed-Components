@@ -61,6 +61,17 @@ function menuMother(menuArray) {
   // menu button click event
   menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open');
+    
+    if (menu.classList.contains('menu--open')) {
+      TweenMax.to(menu, 1, {
+        left: 0
+      })
+    } else if (menu.classList.contains('menu')) {
+      TweenMax.to(menu, 1, {
+        left: -351
+      })
+    }
+    
   });
 
   return menu;
