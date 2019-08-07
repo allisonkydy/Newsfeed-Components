@@ -39,9 +39,18 @@ function menuMother(menuArray) {
   const menu = document.createElement('div');
   const menuList = document.createElement('ul');
   
-  // create li for each item in array
+  // create li for each item in array and add to ul
+  menuArray.forEach(item => {
+    // create li
+    const menuItem = document.createElement('li');
+    // add content to li
+    menuItem.textContent = item;
+    // add to ul
+    menuList.appendChild(menuItem);
+  });
 
   // select menu button
+  const menuButton = document.querySelector('.menu-button');
 
   // menu button click event
 
