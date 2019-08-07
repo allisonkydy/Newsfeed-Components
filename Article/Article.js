@@ -150,3 +150,12 @@ function articleMother(dataObj) {
 
   return article;
 }
+
+const articles = document.querySelector('.articles');
+
+data.map(obj => {
+  // create component for object
+  const newArticle = articleMother(obj);
+  // add component to articles div
+  articles.appendChild(newArticle);
+})
