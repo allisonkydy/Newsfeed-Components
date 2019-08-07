@@ -49,10 +49,16 @@ function menuMother(menuArray) {
     menuList.appendChild(menuItem);
   });
 
+  // add classes
+  menu.classList.add('menu');
+
   // select menu button
   const menuButton = document.querySelector('.menu-button');
 
   // menu button click event
+  menuButton.addEventListener('click', e => {
+    menu.classList.toggle('menu--open');
+  });
 
   return menu;
 }
