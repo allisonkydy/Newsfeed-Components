@@ -33,3 +33,17 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+function menuMother(menuArray) {
+  // create new elements
+  const menu = document.createElement('div');
+  const menuList = document.createElement('ul');
+  
+  // create li for each item in array
+
+  // select menu button
+
+  // menu button click event
+
+  return menu;
+}
