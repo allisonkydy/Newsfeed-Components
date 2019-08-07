@@ -132,8 +132,21 @@ function articleMother(dataObj) {
   article.appendChild(expandButton);
 
   // set class names
+  article.classList.add('article');
+  date.classList.add('date');
+  expandButton.classList.add('expandButton');
 
   // set content
+  title.textContent = dataObj.title;
+  date.textContent = dataObj.date;
+  firstParagraph.textContent = dataObj.firstParagraph;
+  secondParagraph.textContent = dataObj.secondParagraph;
+  thirdParagraph.textContent = dataObj.thirdParagraph;
+
+  // events
+  expandButton.addEventListener('click', () => {
+    article.classList.toggle('article-open');
+  });
 
   return article;
 }
