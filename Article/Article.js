@@ -157,11 +157,19 @@ function articleMother(dataObj) {
   // events
   expandButton.addEventListener('click', (e) => {
     article.classList.toggle('article-open');
-    
+
     if (article.classList.contains('article-open')) {
       e.target.textContent = "Click to close";
+
+      TweenMax.to(article, 1, {
+        height: 400
+      })
     } else if (article.classList.contains('article')) {
       e.target.textContent = "Click to read";
+
+      TweenMax.to(article, 1, {
+        height: 50
+      })
     }
   });
 
