@@ -155,8 +155,14 @@ function articleMother(dataObj) {
   expandButton.textContent = "Click to read";
 
   // events
-  expandButton.addEventListener('click', () => {
+  expandButton.addEventListener('click', (e) => {
     article.classList.toggle('article-open');
+    
+    if (article.classList.contains('article-open')) {
+      e.target.textContent = "Click to close";
+    } else if (article.classList.contains('article')) {
+      e.target.textContent = "Click to read";
+    }
   });
 
   return article;
