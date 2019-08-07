@@ -85,6 +85,16 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'How to Code Happy Little Programs',
+    date: 'Jun 21st, 2019',
+    firstParagraph: `It's a good way of getting rid of all your anxieties and hostilities. We can fix anything. We need dark in order to show light. You have to make these big decisions. This is your world, whatever makes you happy you can put in it. Go crazy. In your world you can create anything you desire. `,
+
+    secondParagraph: `We start with a vision in our heart, and we put it on canvas. Just a little indication. Play with the angles. Working it up and down, back and forth. Maybe there's a happy little bush that lives right there. Isn't that fantastic that you can create an almighty tree that fast? If you've been in Alaska less than a year you're a Cheechako. You have to allow the paint to break to make it beautiful.
+    `,
+
+    thirdParagraph: `But we're not there yet, so we don't need to worry about it. We might as well make some Almighty mountains today as well, what the heck. Trees grow in all kinds of ways. They're not all perfectly straight. Not every limb is perfect. Just make little strokes like that. Maybe he has a little friend that lives right over here. You can spend all day playing with mountains. That's why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul.`
   }
 ];
 
